@@ -2,22 +2,10 @@
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 # --------------------------------------
 
-menu:
-  主页: / || fas fa-home
-  归档: /archives/ || fa fa-archive
-  关于: /about/ || fa fa-sitemap
-  娱乐 || fa fa-heartbeat:
-    音乐: /music/music.html || fas fa-music
-    照片: /tuku/ || fas fa-images
-    相册: /xiance/ || fas fa-video
-    视频: /video/ || fas fa-video
-  菜单 || fa fa-list:
-    标签: /tags/ || fa fa-tags
-    分类: /categories/ || fa fa-folder-open    
-    日志: /timeline/ || fa fa-bell
-    myself: /myself/ || fa fa-id-card
-    留言: /messageboard/ || fa fa-paper-plane
-    友链: /link/ || fa fa-link
+#menu:
+#  主页: / || fas fa-home
+#  归档: /archives/ || fa fa-archive
+#  关于: /about/ || fa fa-sitemap
 
 
 
@@ -1029,21 +1017,7 @@ CDN:
     # artalk_css:
      
 
-    
-
-
-
-businesscard:
-  enable: true #总开关
-  QR_code: https://s2.loli.net/2022/11/09/NuQ3V6fehArJl2E.webp #加群二维码
-  master: 退役老兵 #群主ID
-  group: QQ：1400000222 #QQ群号
-  created: 06/18/1993 #建群时间
-  front: 62262419930628356221 #卡面正面描述语
-  back1: 初次来到人间 #背面从上到下四行文字内容自定义
-  back2: <a href="https://blog.4t.pw">银行卡签名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晋天杰</a>
-  back3: 如果上天不给你机会，那你就自己创造机会，杀出重围 .
-  back4: 再厉害的英雄也需要夫人的陪伴，所以我很爱我的夫人.
+  
 #主页设置
 #path：博客索引页的根路径。（默认值=“”）
 #per_page：每页显示的帖子。（0=禁用分页）
@@ -1052,13 +1026,3 @@ index_generator:
   path: ''
   per_page: 14
   order_by: -date
-# 源计划-方舟：首页轮播图
-# see https://akilar.top/posts/658f52d0/
-swiperBar:
-  enable: true # 开关
-  timemode: updated #date/updated
-  error_img: /img/cover.png #默认封面。记得换成自己的。
-  default_descr: 就算再怎么看我也不知道怎么描述它好啦！
-  swiper_css: https://npm.elemecdn.com/swiper@8.4.2/swiper-bundle.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/swiper@8.4.2/swiper-bundle.min.js #swiper js依赖
-  swiper_init_js: /js/custom/swiper_init.js # swiper初始化方法
