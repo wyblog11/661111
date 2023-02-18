@@ -6,6 +6,9 @@
 doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
   head
+  if is_home()
+    #home_top
+    include ./hometop.pug
     include ./head.pug
     if theme.preloader
       !=partial('includes/loading/loading', {}, {cache: true})    
@@ -19,9 +22,6 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     if page.type !== '404'
       #body-wrap(class=pageType)
         include ./header/index.pug
-        if is_home()
-          #home_top
-          include ./hometop.pug
         
 
         main#content-inner.layout(class=hideAside)
