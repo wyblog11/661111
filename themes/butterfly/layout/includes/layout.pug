@@ -6,10 +6,8 @@
 doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
   head
-  if is_home()
-    #home_top
-    include ./hometop.pug
     include ./head.pug
+     include ./hometop.pug
     if theme.preloader
       !=partial('includes/loading/loading', {}, {cache: true})    
   body
